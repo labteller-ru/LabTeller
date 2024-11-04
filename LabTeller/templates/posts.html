@@ -1,0 +1,265 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная | LabTeller</title>
+    <link rel="stylesheet" href="{% static "css/our-styles.css" %}">
+    <link rel="stylesheet" href="{% static "css/posts.css" %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="" class="logo">
+            <img src="img/LabTeller.png" alt="logo" class="logo__img">
+        </a>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="" class="nav__link">Расшифровка</a>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link">Чекапы</a>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link">Экспресс-диагностика</a>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link">Телеграм гайды</a>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link">Отзывы</a>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link">Статьи</a>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="buttons__block">
+            <a href="t.me/" class="telegram__button">
+                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.350701 9.15094L4.9488 10.8655L6.74126 16.6326C6.8192 17.0222 7.2868 17.1002 7.59854 16.8664L10.1703 14.7622C10.4041 14.5284 10.7938 14.5284 11.1055 14.7622L15.7036 18.1133C16.0154 18.3471 16.483 18.1912 16.5609 17.8016L19.99 1.43551C20.0679 1.04584 19.6782 0.656179 19.2886 0.812046L0.350701 8.1378C-0.1169 8.29367 -0.1169 8.99507 0.350701 9.15094ZM6.50747 10.0082L15.5477 4.47492C15.7036 4.39699 15.8595 4.63079 15.7036 4.70872L8.29993 11.6448C8.06613 11.8786 7.83233 12.1903 7.83233 12.58L7.59854 14.4504C7.59854 14.6842 7.20886 14.7622 7.13093 14.4504L6.19572 11.0213C5.96192 10.6317 6.1178 10.1641 6.50747 10.0082Z" fill="white"/>
+                </svg>
+                <span>Телеграм канал</span>  
+            </a>
+            <button class="menu__toggle">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 7.5H21" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M3 12.5H21" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M3 17.5H21" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <span>Меню</span>
+            </button>
+        </div>
+        <div class="burger-menu">
+            <a href="" class="telegram__button-mobile">
+                <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.850701 8.65094L5.4488 10.3655L7.24126 16.1326C7.3192 16.5222 7.7868 16.6002 8.09854 16.3664L10.6703 14.2622C10.9041 14.0284 11.2938 14.0284 11.6055 14.2622L16.2036 17.6133C16.5154 17.8471 16.983 17.6912 17.0609 17.3016L20.49 0.935511C20.5679 0.545843 20.1782 0.156179 19.7886 0.312046L0.850701 7.6378C0.3831 7.79367 0.3831 8.49507 0.850701 8.65094ZM7.00747 9.5082L16.0477 3.97492C16.2036 3.89699 16.3595 4.13079 16.2036 4.20872L8.79993 11.1448C8.56613 11.3786 8.33233 11.6903 8.33233 12.08L8.09854 13.9504C8.09854 14.1842 7.70886 14.2622 7.63093 13.9504L6.69572 10.5213C6.46192 10.1317 6.6178 9.66407 7.00747 9.5082Z" fill="white"/>
+                </svg>
+                Телеграм канал 
+            </a>
+            <ul class="burger-menu__list">
+                <li class="burger-menu__item"><a href="" class="burger-menu__link">Расшифровка</a></li>
+                <li class="burger-menu__item"><a href="" class="burger-menu__link">Чекапы</a></li>
+                <li class="burger-menu__item"><a href="" class="burger-menu__link">Экспресс-диагностика</a></li>
+                <li class="burger-menu__item"><a href="" class="burger-menu__link">Телеграм гайды</a></li>
+                <li class="burger-menu__item"><a href="" class="burger-menu__link">Отзывы</a></li>
+                <li class="burger-menu__item"><a href="" class="burger-menu__link">Статьи</a></li>
+                <li class="burger-menu__item"><a href="" class="burger-menu__link">Контакты</a></li>
+            </ul>
+            <div class="burger-buttons__block">
+                <a href="" class="email-link">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.5 20.5H7.5C4.5 20.5 2.5 19 2.5 15.5V8.5C2.5 5 4.5 3.5 7.5 3.5H17.5C20.5 3.5 22.5 5 22.5 8.5V15.5C22.5 19 20.5 20.5 17.5 20.5Z" stroke="#692FFC" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M17.5 9L14.37 11.5C13.34 12.32 11.65 12.32 10.62 11.5L7.5 9" stroke="#692FFC" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    info@labteller.ru
+                </a>
+                <a href="" class="social-link">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path style="color: #2FA6FC;" d="M15.3507 24.6509L19.9488 26.3655L21.7413 32.1326C21.8192 32.5222 22.2868 32.6002 22.5985 32.3664L25.1703 30.2622C25.4041 30.0284 25.7938 30.0284 26.1055 30.2622L30.7036 33.6133C31.0154 33.8471 31.483 33.6912 31.5609 33.3016L34.99 16.9355C35.0679 16.5458 34.6782 16.1562 34.2886 16.312L15.3507 23.6378C14.8831 23.7937 14.8831 24.4951 15.3507 24.6509ZM21.5075 25.5082L30.5477 19.9749C30.7036 19.897 30.8595 20.1308 30.7036 20.2087L23.2999 27.1448C23.0661 27.3786 22.8323 27.6903 22.8323 28.08L22.5985 29.9504C22.5985 30.1842 22.2089 30.2622 22.1309 29.9504L21.1957 26.5213C20.9619 26.1317 21.1178 25.6641 21.5075 25.5082Z" fill="#2FA6FC"/>
+                    </svg>
+                </a>
+                <a href="" class="social-link">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path style="color: FF4236;" d="M30 33H20C17 33 15 31 15 28V22C15 19 17 17 20 17H30C33 17 35 19 35 22V28C35 31 33 33 30 33Z" fill="#FF4236" stroke="#FF4236" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M24.3996 22.5001L26.8996 24.0001C27.7996 24.6001 27.7996 25.5001 26.8996 26.1001L24.3996 27.6001C23.3996 28.2001 22.5996 27.7001 22.5996 26.6001V23.6001C22.5996 22.3001 23.3996 21.9001 24.3996 22.5001Z" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </header>
+    <main class="main">
+        <nav class="breadcrumb">
+            <ul class="breadcrumb__list">
+                <li class="breadcrumb__item">
+                    <a href="home.html" class="breadcrumb__link breadcrumb__link--active">Главная</a>
+                </li>
+                <li class="breadcrumb__item">
+                    <span class="breadcrumb__current">Статьи</span>
+                </li>
+            </ul>
+        </nav>
+        <section class="posts-section">
+            <h1 class="posts-section__title">Статьи</h1>
+            <div class="posts-section__sort">
+                <button class="posts-section_category" id="toggle-dropdown">
+                    Все категории
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="dropdown-icon">
+                        <path d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15.5302 13.26L12.0002 9.74001L8.47021 13.26" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <ul class="dropdown__list" id="dropdown-list">
+                    <li class="dropdown__item">
+                        <a href="?category=all">Все категории</a> <!-- Ссылка на все статьи -->
+                    </li>
+                    {% for category in categories %}
+                        <li class="dropdown__item">
+                            <a href="?category={{ category.slug }}">{{ category.name }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+                <div class="posts-section__sort-right">
+                    <span class="posts-section__sort-text">Сортировка:</span>
+                    <a href="" class="posts-section__sort-button active">Популярные</a>
+                    <a href="" class="posts-section__sort-button">По дате</a>
+                </div>
+            </div>
+            <div class="posts__container">
+                {% for article in articles %}
+                    <a href="{% url 'article_detail' article.slug %}" class="post__card">
+                        <img src="{{ article.image.url }}" alt="{{ article.title }}" class="post__img">
+                        <h4 class="post__title">{{ article.title }}</h4>
+                        <p class="post__text">{{ article.short_description }}</p>
+                    </a>
+                {% endfor %}
+            </div>
+            <div class="separator-accent none"></div>
+            <div class="pagination">
+                <button class="pagination__left unactive">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2Z" stroke="#111111" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.2598 8.47003L9.73976 12L13.2598 15.53" stroke="#111111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Пред. страница</span>
+                </button>
+                <div class="pagination__middle">
+                    <button class="pagination__middle-number active">
+                        1
+                    </button>
+                    <button class="pagination__middle-number">
+                        2
+                    </button>
+                    <button class="pagination__middle-number">
+                        3
+                    </button>
+                    <button class="pagination__middle-number">
+                        4
+                    </button>
+                </div>
+                <button class="pagination__left">
+                    <span>След. страница</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#692FFC" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.7402 15.53L14.2602 12L10.7402 8.46997" stroke="#692FFC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__container-top">
+                <div class="footer__logo">
+                    <img src="img/LabTeller.png" alt="Labteller">
+                </div>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Расшифровка</a></li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Чекалы</a></li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Экспресс-диагностика</a></li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Телеграм гиды</a></li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Отзывы</a></li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Статьи</a></li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <a href="" class="labteller-telegram">
+                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.350701 9.15094L4.9488 10.8655L6.74126 16.6326C6.8192 17.0222 7.2868 17.1002 7.59854 16.8664L10.1703 14.7622C10.4041 14.5284 10.7938 14.5284 11.1055 14.7622L15.7036 18.1133C16.0154 18.3471 16.483 18.1912 16.5609 17.8016L19.99 1.43551C20.0679 1.04584 19.6782 0.656179 19.2886 0.812046L0.350701 8.1378C-0.1169 8.29367 -0.1169 8.99507 0.350701 9.15094ZM6.50747 10.0082L15.5477 4.47492C15.7036 4.39699 15.8595 4.63079 15.7036 4.70872L8.29993 11.6448C8.06613 11.8786 7.83233 12.1903 7.83233 12.58L7.59854 14.4504C7.59854 14.6842 7.20886 14.7622 7.13093 14.4504L6.19572 11.0213C5.96192 10.6317 6.1178 10.1641 6.50747 10.0082Z" fill="white"/>
+                    </svg>
+                    Labteller
+                </a>
+            </div>
+            <div class="separator-accent"></div>
+            <div class="footer__flex">
+                <div class="footer__contacts">
+                    <div class="footer__socials">
+                        <a href="mailto:info@labteller.ru" class="footer__social-link__big">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 20.5H7C4 20.5 2 19 2 15.5V8.5C2 5 4 3.5 7 3.5H17C20 3.5 22 5 22 8.5V15.5C22 19 20 20.5 17 20.5Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17 9L13.87 11.5C12.84 12.32 11.15 12.32 10.12 11.5L7 9" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            info@labteller.ru
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.350701 8.65094L4.9488 10.3655L6.74126 16.1326C6.8192 16.5222 7.2868 16.6002 7.59854 16.3664L10.1703 14.2622C10.4041 14.0284 10.7938 14.0284 11.1055 14.2622L15.7036 17.6133C16.0154 17.8471 16.483 17.6912 16.5609 17.3016L19.99 0.935511C20.0679 0.545843 19.6782 0.156179 19.2886 0.312046L0.350701 7.6378C-0.1169 7.79367 -0.1169 8.49507 0.350701 8.65094ZM6.50747 9.5082L15.5477 3.97492C15.7036 3.89699 15.8595 4.13079 15.7036 4.20872L8.29993 11.1448C8.06613 11.3786 7.83233 11.6903 7.83233 12.08L7.59854 13.9504C7.59854 14.1842 7.20886 14.2622 7.13093 13.9504L6.19572 10.5213C5.96192 10.1317 6.1178 9.66407 6.50747 9.5082Z" fill="white"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 20H7C4 20 2 18 2 15V9C2 6 4 4 7 4H17C20 4 22 6 22 9V15C22 18 20 20 17 20Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.4001 9.50006L13.9001 11.0001C14.8001 11.6001 14.8001 12.5001 13.9001 13.1001L11.4001 14.6001C10.4001 15.2001 9.6001 14.7001 9.6001 13.6001V10.6001C9.6001 9.30006 10.4001 8.90006 11.4001 9.50006Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="footer__payments">
+                        <img src="img/visa.png" alt="Visa" class="footer__payment-method">
+                        <img src="img/mastercard.png" alt="MasterCard" class="footer__payment-method">
+                        <img src="img/mir.png" alt="Мир" class="footer__payment-method">
+                    </div>
+                </div>
+                <div class="footer__info">
+                    <p class="footer__disclaimer">
+                        Расшифровка анализов предоставляется исключительно в информационных целях, не подразумевает постановку диагнозов и не является заменой консультации у врача.
+                    </p>
+                </div>
+                <div class="footer__copyright">
+                    <ul class="footer__policy-list">
+                        <li class="footer__policy-item"><a href="#" class="footer__policy-link">Политика конфиденциальности</a></li>
+                        <li class="footer__policy-item"><a href="#" class="footer__policy-link">Правила оплаты и политика безопасности</a></li>
+                        <li class="footer__policy-item"><a href="#" class="footer__policy-link">Договор оферты</a></li>
+                        <li class="footer__copyright-text">2023. labteller. Все права защищены</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#dropdown-list a').on('click', function(event) {
+                event.preventDefault();
+                var categoryUrl = $(this).attr('href');
+                
+                $.get(categoryUrl, function(data) {
+                    $('.posts__container').html($(data).find('.posts__container').html());
+                });
+            });
+        });
+    </script>
+    <script src="{% static "js/posts.js" %}"></script>
+    <script src="{% static "js/header.js" %}"></script>
+</body>
+</html>

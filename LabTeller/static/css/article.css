@@ -1,0 +1,276 @@
+.article-banner {
+    border-radius: 20px;
+    max-width: 793px;
+    width: 100%;
+    height: auto;
+    background-color: var(--white-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 33px;
+}
+
+.article-banner__top {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.article-banner__top-name {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--dark-color);
+    border-radius: 40px;
+    background-color: var(--light-color);
+    height: 36px;
+    display: flex;
+    padding-inline: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-banner__top-date,
+.article-banner__top-updated {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: var(--dark-color);
+    height: 36px;
+    padding-inline: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--dark-color);
+    border-radius: 40px;
+}
+
+.article-banner__middle-title {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 110%;
+    display: flex;
+    align-items: center;
+    color: var(--dark-color);
+}
+
+.article-banner__bottom-img {
+    border-radius: 20px;
+    max-width: 753px;
+    width: 100%;
+    height: 250px;
+}
+
+.article-content {
+    background-color: var(--white-color);
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 32px;
+    border: 1px solid var(--accent-color);
+}
+
+.article-content__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--dark-color);
+    padding-bottom: 20px;
+}
+
+.article-content-list__item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--accent-color);
+}
+
+.article-content-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: disc;
+    padding-left: 25px;
+}
+
+.article-info__leftside {
+    max-width: 793px;
+}
+
+.article-info {
+    display: flex;
+    gap: 20px;
+}
+
+.guide-container {
+    width: 387px;
+    padding: 20px;
+    background-color: var(--light-color);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 20px;
+    margin-top: 32px;
+    position: sticky;
+    top: 100px;
+}
+
+.guide-container__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.guide-container__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--dark-color);
+}
+
+.guide-container__top svg {
+    color: var(--accent-color);
+}
+
+.guide-container__text-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--main-color);
+}
+
+.guide-container__text-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--dark-color);
+}
+
+.article-info__textblock {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.1;
+    color: var(--dark-color);
+    padding: 30px 0;
+    max-width: 650px;
+}
+
+.article-info__textp {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--dark-color);
+    max-width: 740px;
+}
+
+.custom-blockquote {
+    border-left: 4px solid #ccc; /* Стиль рамки */
+    padding: 10px 20px; /* Отступы */
+    margin: 10px 0; /* Отступы вокруг */
+    background-color: #f9f9f9; /* Цвет фона */
+}
+
+
+.article-info__theory,
+.article-content-block h2 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.1;
+    color: var(--dark-color);
+    padding: 10px 20px;
+    background-color: var(--light-color);
+    border-radius: 20px;
+    width: fit-content;
+    margin: 30px 0 20px;
+}
+
+@media (max-width: 1200px) {
+    .article-info__rightside {
+        display: none;
+    }
+
+    .article-info__leftside,
+    .breadcrumb,
+    .article-banner {
+        margin: 0 auto;
+    }
+}
+
+.theory-section__title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.3;
+    color: var(--dark-color);
+}
+
+.theory-section__title span {
+    color: var(--main-color);
+}
+
+.theory-section__list {
+    padding-top: 20px;
+    list-style: disc;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.theory-section__item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--dark-color);
+}
+
+.theory-section__item:nth-child(2) {
+    font-weight: 600 !important;
+    color: black;
+}
+
+.theory-section__item:nth-child(3) {
+    text-decoration: underline;
+}
+
+
+.theory-section__item:nth-child(4) {
+    font-style: italic;
+}
+
+.note__icon {
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--dark-color);
+    gap: 10px;
+}
+
+.note {
+    background-color: var(--white-color);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0 30px;
+}
+
+h3 {
+    margin: 0 !important; 
+    padding: 0 !important;
+}
+
+.risk-factors {
+    padding-bottom: var(--padding-y);
+}
